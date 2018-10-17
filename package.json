@@ -18,5 +18,9 @@
   "homepage": "https://github.com/ylapp1/basic-json-editor#readme",
   "devDependencies": {
     "electron": "^3.0.4"
+  },
+  "dependencies": {
+    "@json-editor/json-editor": "^1.1.0",
+    "jquery": "^3.3.1"
   }
 }

@@ -1,0 +1,7 @@
+textarea#editJsonTextArea {
+    width: 100%;
+}
+
+div#action-buttons {
+    display: inline-block;
+}

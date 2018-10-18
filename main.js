@@ -17,6 +17,10 @@ let mainBrowserWindow = null;
 function initialize()
 {
     mainBrowserWindow = new BrowserWindow();
+
+    // Hide the menu bar
+    mainBrowserWindow.setMenu(null);
+
     mainBrowserWindow.loadFile("pages/index.html");
 }
 

@@ -1,7 +1,57 @@
-textarea#editJsonTextArea {
+/* Page */
+body {
+    background-color: #E9F1FF;
+    color: #6A6A6A;
+    min-width: 750px;
+}
+
+
+/* Menu Bar */
+div#menu-bar {
+    padding: 0;
+    margin: 0;
+
     width: 100%;
+
+    background-color: #A8C2F2;
+    border-bottom: 1px solid #819ED3;
+
+    /* Keep the bar always at the top of the screen */
+    position: fixed;
+
+    /* Keep the bar always on top of other elements by setting its z-index to a very high value */
+    z-index: 99;
 }
 
 div#action-buttons {
-    display: inline-block;
+    min-width: 750px;
+}
+div#action-buttons button {
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+
+    /* Only the right border is added because the button on the left already has a border because it touches the window border */
+    border-right: 1px solid #819ED3;
+
+    /*
+     * Using the combination of display:block and float:left to make the buttons stay in the same row.
+     * display: inline-block or display:inline are not used because these options create one white space between each
+     * button because of the line breaks in the html file.
+     */
+    display: block;
+    float: left;
+}
+
+
+/* json-editor */
+div#json-editor {
+    padding-top: 50px;
+    visibility: hidden;
+    width: 98%;
+    margin: 0 auto;
+}
+div#json-editor div.well {
+    background-color: #FFFFFF;
+    border-color: #6A84B3;
 }

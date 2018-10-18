@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Basic JSON Editor</title>
+
+    <!-- jQuery doesn't have to be included here because it is loaded in the index.js file -->
+
+    <!-- Include bootstrap -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Include custom styles and scripts -->
     <link rel="stylesheet" href="../resources/css/index.css">
     <script src ="../resources/javascript/index.js"></script>
 </head>
 <body>
 
-    <!-- Load and save buttons -->
-    <div id="action-buttons">
-        <button id="selectFileButton">Datei wählen</button>
-        <button id="saveEditedJsonButton">Speichern</button>
+    <div id="menu-bar">
+        <!-- Load, save and clear buttons -->
+        <div id="action-buttons">
+            <button id="selectFileButton" class="btn btn-primary"><span class="glyphicon glyphicon-folder-open"></span> Datei wählen</button>
+            <button id="selectSchemaFileButton" class="btn btn-primary"><span class="glyphicon glyphicon-file"></span> Schema Datei wählen</button>
+            <button id="saveEditedJsonButton" class="btn btn-primary"><span class="glyphicon glyphicon-save-file"></span> Speichern</button>
+            <button id="resetEditorFields" class="btn btn-warning"><span class="glyphicon glyphicon-remove"></span> Felder leeren</button>
+            <button id="clearEditorButton" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Editor leeren</button>
+        </div>
     </div>
 
     <!-- Json Editor -->

@@ -3,6 +3,7 @@ basic-json-editor
 
 A basic electron app to edit json files
 
+![example](https://user-images.githubusercontent.com/30892746/47157909-ad82a280-d2ea-11e8-986f-abc529125f97.png)
 
 Usage
 -----

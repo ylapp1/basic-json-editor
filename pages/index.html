@@ -6,6 +6,9 @@
 
     <!-- jQuery doesn't have to be included here because it is loaded in the index.js file -->
 
+    <!-- Include font awesome icons -->
+    <link rel="stylesheet" href="../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
     <!-- Include bootstrap -->
     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 
@@ -18,11 +21,11 @@
     <div id="menu-bar">
         <!-- Load, save and clear buttons -->
         <div id="action-buttons">
-            <button id="selectFileButton" class="btn btn-primary"><span class="glyphicon glyphicon-folder-open"></span> Datei wählen</button>
-            <button id="selectSchemaFileButton" class="btn btn-primary"><span class="glyphicon glyphicon-file"></span> Schema Datei wählen</button>
-            <button id="saveEditedJsonButton" class="btn btn-primary"><span class="glyphicon glyphicon-save-file"></span> Speichern</button>
-            <button id="resetEditorFields" class="btn btn-warning"><span class="glyphicon glyphicon-remove"></span> Felder leeren</button>
-            <button id="clearEditorButton" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Editor leeren</button>
+            <button id="selectFileButton" class="btn btn-primary"><i class="fas fa-folder-open"></i> Datei wählen</button>
+            <button id="selectSchemaFileButton" class="btn btn-primary"><i class="fas fa-file"></i> Schema Datei wählen</button>
+            <button id="saveEditedJsonButton" class="btn btn-primary"><i class="fas fa-save"></i> Speichern</button>
+            <button id="resetEditorFields" class="btn btn-warning"><i class="fas fa-times"></i> Felder leeren</button>
+            <button id="clearEditorButton" class="btn btn-danger"><i class="fas fa-trash-alt"></i> Editor leeren</button>
         </div>
     </div>
 

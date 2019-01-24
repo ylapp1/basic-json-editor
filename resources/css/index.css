@@ -41,6 +41,8 @@ div#action-buttons button {
      */
     display: block;
     float: left;
+
+    color: #FFF;
 }
 
 
@@ -51,7 +53,9 @@ div#json-editor {
     width: 98%;
     margin: 0 auto;
 }
-div#json-editor div.well {
-    background-color: #FFFFFF;
+div#json-editor div.card {
+
+    /** Must overwrite the background color with !important because the default background color is defined with !important too */
+    background-color: #FFFFFF !important;
     border-color: #6A84B3;
 }
